@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="shortcut icon" type="img/ico" href="favicon-lightbulb-o.ico">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="index.js"></script>
+<!-- 	<link rel="html-import" href="./brown/brown_fair.html">
+	<link rel="html-import" href="./brown/brown_light.html">
+	<link rel="html-import" href="./brown/brown_medium.html">
+	<link rel="html-import" href="./brown/brown_bronze.html">
+	<link rel="html-import" href="./brown/brown_tan.html">
+	<link rel="html-import" href="./brown/brown_rich.html">
+	<link rel="html-import" href="./green/green_fair.html">
+	<link rel="html-import" href="./hazel/hazel_fair.html">
+	<link rel="html-import" href="./blue/blue_fair.html">
+	<link rel="html-import" href="./blue/blue_light.html">
+	<link rel="html-import" href="./blue/blue_medium.html">
+	<link rel="html-import" href="./blue/blue_bronze.html">
+	<link rel="html-import" href="./blue/blue_tan.html">
+	<link rel="html-import" href="./blue/blue_rich.html"> -->
+
+	<title>Best Hair Color</title>
+</head>
+<body>
+
+	<!--Intro-->
+
+	<div class="container text-center">
+		<div class="jumbotron">
+			<h1 class="display-4" style="font-size: 2.5rem;"><i class="fas fa-user-alt"></i> Your Best Hair Color Is . . .</h1>
+			<hr class="my-4">
+			<p class="info">"The most flattering hair color comes when you have "THE PERFECT TRIO". A perfect trio is when your hair color matches your skin tone and eye color. Your perfect hair color will make your eyes POP. Your eyes will appear brighter and bigger. It will also go well with your skin tone. The right hair color will give your skin color, vibrance, and softness." <a href="http://salonenvychicago.com/" target="_blank"> - Salone Envy Chicago</a></p>
+
+		</div>
+
+		<!--Drop down Item 1 -->
+
+		<h3 class="display-4" style="font-size: 1.5rem;">What is your eye color</h3>
+		<div class="dropdown">
+			<div class="input-group justify-content-center">
+				<div class="input-group-btn">
+					<button class="btn btn-info btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #588c7e;">
+						Eye Color
+
+					</button>
+
+					<div class="dropdown-menu" onchange="selectMenu1"  aria-labelledby="dropdownMenuButton" id="eyeColor">
+						<a class="dropdown-item"  data="brown" ><img src="img/brown_eye.jpg" class="rounded-circle"> Brown</a>
+						<a class="dropdown-item"  data="blue" ><img src="img/blue_eye.jpg" class="rounded-circle" > Blue</a>
+						<a class="dropdown-item" data="green" ><img src="img/green_eye.jpg" class="rounded-circle" > Green</a>
+						<a class="dropdown-item"  data="hazel" ><img src="img/hazel_eye.jpg" class="rounded-circle" > Hazel</a>
+					</div>
+					
+					
+
+				</div>
+			</div>
+		</div>
+
+		<!--Drop down Item 2-->
+
+		<h3 class="display-4" style="font-size: 1.5rem;"> What is your skin tone</h3>
+		<div id="menu2" class="dropdown">
+			<div class="input-group justify-content-center">
+				<div class="input-group-btn">
+					<button class="btn btn-info btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #588c7e;">
+						Skin Tone
+					</button>
+
+					<div class="dropdown-menu" onchange="selectMenu2" aria-labelledby="dropdownMenuButton" id="skinTone">
+						<a class="dropdown-item"  data="fair"><img src="img/fair.jpg" class="rounded-circle" > Fair</a>
+						<a class="dropdown-item"  data="light"><img src="img/light.jpg" class="rounded-circle" > Light</a>
+						<a class="dropdown-item" data="medium"><img src="img/medium.jpg" class="rounded-circle" > Medium</a>
+						<a class="dropdown-item"  data="bronze"><img src="img/bronze_dark.jpg" class="rounded-circle" > Bronze</a>
+						<a class="dropdown-item"  data="tan"><img src="img/tan.jpg" class="rounded-circle" > Tan</a>
+						<a class="dropdown-item" data="rich"><img src="img/dark.jpg" class="rounded-circle" > Rich</a>
+					</div>
+
+					<div class="error" id="error"></div>
+
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<!--Result Button-->
+		<label id="error"></label>
+		<button type="button" class="btn btn-info btn-lg active" title ="Submit" style="background-color: #3e4444;" onclick="validate()"><i class="fas fa-arrow-circle-right fa-lg"></i></button>
+
+
+		<script>
+
+			$(".dropdown-menu a ").click(function(){
+
+				$(this).parents(".input-group-btn").find('.btn').text($(this).text());
+
+
+			});
+
+		</script>
+	</body>
+	</html>

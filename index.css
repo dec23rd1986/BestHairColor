@@ -1,0 +1,44 @@
+body, html {
+
+	height: 100%;
+  	margin: 0;
+  	background-image: url("img/background.jpg"); 
+  	background-position: center;
+  	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	font-family: 'Inconsolata', monospace; !important;
+  	text-align: center !important;
+}
+
+.jumbotron {
+	margin-top: 20px;
+	margin-right: 50px;
+	margin-left: 50px;
+	background-color: #f2e394 !important; 
+
+}
+
+.info{
+	font-size: 14px;
+}
+
+a{
+	color:#588c7e !important;
+}
+
+h3{
+	color: #e5e5e5 !important;
+}
+
+.active{
+	margin-bottom: 20px;
+}
+.error {
+  color: #000000;
+  font-size: 20px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+}
+
+
